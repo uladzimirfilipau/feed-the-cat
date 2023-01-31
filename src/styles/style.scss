@@ -269,3 +269,38 @@ body {
   text-align: center;
   color: $primary-text-color;
 }
+
+.item__text {
+  height: 15px;
+  margin: 14px 0 0;
+  font-family: $text-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: $primary-text-color;
+}
+
+.item__text_disabled {
+  color: $disabled-text-color;
+}
+
+.item__text-button {
+  color: $default-color;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  border-bottom: 1px dashed $default-color;
+
+  &:hover {
+    cursor: pointer;
+    color: $text-hover-color;
+    border-bottom: 1px dashed $text-hover-color;
+  }
+}
+
+.item__text-span {
+  color: $default-color;
+}
