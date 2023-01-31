@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/uladzimirfilipau/feed-the-cat/static/css/main.4ab8fe77.css",
-    "main.js": "/uladzimirfilipau/feed-the-cat/static/js/main.ce30f0fd.js",
-    "static/media/Photo.png": "/uladzimirfilipau/feed-the-cat/static/media/Photo.4653febce4c21301b031.png",
-    "static/media/Pattern.svg": "/uladzimirfilipau/feed-the-cat/static/media/Pattern.1dafcd2d49be28232f03.svg",
-    "static/media/Exo20-ExtraLight.woff": "/uladzimirfilipau/feed-the-cat/static/media/Exo20-ExtraLight.3d447229ebd12062aa36.woff",
-    "index.html": "/uladzimirfilipau/feed-the-cat/index.html",
-    "main.4ab8fe77.css.map": "/uladzimirfilipau/feed-the-cat/static/css/main.4ab8fe77.css.map",
-    "main.ce30f0fd.js.map": "/uladzimirfilipau/feed-the-cat/static/js/main.ce30f0fd.js.map"
+    "main.css": "/feed-the-cat/static/css/main.63f1756b.css",
+    "main.js": "/feed-the-cat/static/js/main.12d8f7d9.js",
+    "static/media/Photo.png": "/feed-the-cat/static/media/Photo.4653febce4c21301b031.png",
+    "static/media/Pattern.svg": "/feed-the-cat/static/media/Pattern.1dafcd2d49be28232f03.svg",
+    "static/media/Exo20-ExtraLight.woff": "/feed-the-cat/static/media/Exo20-ExtraLight.3d447229ebd12062aa36.woff",
+    "index.html": "/feed-the-cat/index.html",
+    "main.63f1756b.css.map": "/feed-the-cat/static/css/main.63f1756b.css.map",
+    "main.12d8f7d9.js.map": "/feed-the-cat/static/js/main.12d8f7d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ab8fe77.css",
-    "static/js/main.ce30f0fd.js"
+    "static/css/main.63f1756b.css",
+    "static/js/main.12d8f7d9.js"
   ]
 }
