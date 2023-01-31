@@ -183,3 +183,24 @@ body {
   color: $disabled-color;
   opacity: 0.5;
 }
+
+.article__list {
+  list-style-type: none;
+  margin: 15px 0 0 51px;
+  padding: 0;
+}
+
+.article__list-item {
+  margin: 0;
+  font-family: $text-font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $article-text-color;
+}
+
+.article__list-item_disabled {
+  color: $disabled-color;
+  opacity: 0.5;
+}
