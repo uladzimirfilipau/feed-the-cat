@@ -168,3 +168,18 @@ body {
   color: $disabled-color;
   opacity: 0.5;
 }
+
+.article__subtitle {
+  margin: 0 0 0 51px;
+  font-family: $text-font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: $article-title-color;
+}
+
+.article__subtitle_disabled {
+  color: $disabled-color;
+  opacity: 0.5;
+}
