@@ -204,3 +204,68 @@ body {
   color: $disabled-color;
   opacity: 0.5;
 }
+
+.figure {
+  margin: 0;
+}
+
+.figure__image {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 100%;
+  border-radius: 0 0 0 5px;
+}
+
+.figure__image_disabled {
+  opacity: 0.5;
+}
+
+.figcaption {
+  margin: 0;
+  padding: 20px 0 8px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: $default-color;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.figcaption_select {
+  background-color: $selected-color;
+}
+
+.figcaption_disabled {
+  background-color: $disabled-color;
+}
+
+.figcaption__text {
+  margin: 0;
+  font-family: $text-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 22px;
+  text-align: center;
+  color: $primary-text-color;
+}
+
+.figcaption__text-span {
+  margin: 0;
+  font-family: $text-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 22px;
+  text-align: center;
+  color: $primary-text-color;
+}
