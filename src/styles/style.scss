@@ -1,4 +1,5 @@
 $small: 640px;
+$medium: 1280px;
 
 $title-font-family: 'Exo2.0';
 $text-font-family: 'Trebuchet MS';
@@ -67,7 +68,11 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem 5rem;
+  gap: 5rem;
+
+  @media screen and (max-width: $medium) {
+    gap: 2rem;
+  }
 }
 
 .item {
