@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import ArticleText from './ArticleText';
 import ArticleTitle from './ArticleTitle';
 import ArticleSubtitle from './ArticleSubtitle';
 import ArticleList from './ArticleList';
 import ArticleFigure from './ArticleFigure';
+import { Context } from '../context/Сontext';
 
-function Article({ data, handleSelect, disabledCard, isSelected }) {
+function Article() {
+  const { isSelected, disabledCard, handleSelect } = useContext(Context);
   const [isHovering, setIsHovering] = useState(false);
+
   const onMouseEnter = () => isSelected && setIsHovering(true);
   const onMouseLeave = () => setIsHovering(false);
 
@@ -25,11 +28,11 @@ function Article({ data, handleSelect, disabledCard, isSelected }) {
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <ArticleText selectedHover={selectedHover} disabledCard={disabledCard} />
-      <ArticleTitle disabledCard={disabledCard} />
-      <ArticleSubtitle data={data} disabledCard={disabledCard} />
-      <ArticleList data={data} disabledCard={disabledCard} />
-      <ArticleFigure data={data} isSelected={isSelected} disabledCard={disabledCard} />
+      <ArticleText selectedHover={selectedHover} />
+      <ArticleTitle />
+      <ArticleSubtitle />
+      <ArticleList />
+      <ArticleFigure />
     </article>
   );
 }

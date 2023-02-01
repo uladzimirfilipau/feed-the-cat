@@ -1,7 +1,11 @@
-import { basicData } from '../utils/consts';
+import { useContext } from 'react';
+import { Context } from '../context/Сontext';
+import { constantData } from '../utils/consts';
 
-function ArticleTitle({ disabledCard }) {
-  const { articleTitle } = basicData;
+function ArticleTitle() {
+  const { disabledCard } = useContext(Context);
+
+  const { articleTitle } = constantData;
 
   const titleClassName = `article__title ${disabledCard && 'article__title_disabled'}`;
 

@@ -1,9 +1,9 @@
-import { mainTitle, optionsData } from '../utils/consts';
+import { mainTitle, variousData } from '../utils/consts';
 import '../styles/style.css';
 import Card from './Card';
 
 function App() {
-  const cards = optionsData.map((data) => <Card key={data.taste} data={data} />);
+  const cards = variousData.map((data) => <Card key={data.taste} data={data} />);
 
   return (
     <main className='main'>
