@@ -8,10 +8,8 @@ function Text() {
   const { itemText, itemButtonText, itemTextSpan } = constantData;
   const { textSelected, textDisabled } = data;
 
-  const textClassName = `item__text ${disabledCard && 'item__text_disabled'}`;
-
   if (disabledCard) {
-    return <p className={textClassName}>{textDisabled}</p>;
+    return <p className='item__text item__text_disabled'>{textDisabled}</p>;
   } else if (isSelected) {
     return <p className='item__text'>{textSelected}</p>;
   }
