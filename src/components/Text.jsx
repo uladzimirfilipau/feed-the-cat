@@ -10,7 +10,9 @@ function Text() {
 
   if (disabledCard) {
     return <p className='item__text item__text_disabled'>{textDisabled}</p>;
-  } else if (isSelected) {
+  }
+
+  if (isSelected) {
     return <p className='item__text'>{textSelected}</p>;
   }
 
