@@ -5,3 +5,11 @@
   font-display: swap;
   src: url('Exo20-ExtraLight.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('TrebuchetMS.woff') format('woff');
+}

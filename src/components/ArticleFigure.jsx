@@ -1,8 +1,12 @@
-import { basicData } from '../utils/consts';
+import { constantData } from '../utils/consts';
 import image from '../image/Photo.png';
+import { useContext } from 'react';
+import { Context } from '../context/Сontext';
 
-function ArticleFigure({ data, isSelected, disabledCard }) {
-  const { weightSpan } = basicData;
+function ArticleFigure() {
+  const { data, isSelected, disabledCard } = useContext(Context);
+
+  const { weightSpan } = constantData;
   const { weight } = data;
 
   const figcaptionClassName = `figcaption ${isSelected && 'figcaption_select'} ${

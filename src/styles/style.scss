@@ -1,5 +1,4 @@
-$small: 1024px;
-$medium: 1280px;
+$big: 1280px;
 
 $title-font-family: 'Exo2.0';
 $text-font-family: 'Trebuchet MS';
@@ -18,7 +17,6 @@ $disabled-color: #b3b3b3;
 $disabled-text-color: #ffff66;
 
 body {
-  max-width: 100%;
   min-width: 320px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
@@ -28,7 +26,6 @@ body {
 }
 
 .main {
-  width: 100%;
   min-height: 100vh;
   margin: 0;
   padding: 36px 80px 67px;
@@ -42,13 +39,15 @@ body {
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $big) {
     padding: 36px 0 67px;
   }
 }
 
 .main__title {
   margin: 0 0 24px;
+  padding: 0 20px;
+  box-sizing: border-box;
   font-family: $title-font-family;
   font-weight: 100;
   font-size: 36px;
@@ -59,8 +58,6 @@ body {
 }
 
 .main__list {
-  max-width: 1120px;
-  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -68,10 +65,10 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 80px;
 
-  @media screen and (max-width: $medium) {
-    gap: 2rem;
+  @media screen and (max-width: $big) {
+    gap: 35px;
   }
 }
 
@@ -89,6 +86,7 @@ body {
   border: 4px solid $default-color;
   background-color: $default-color;
   border-radius: 12px;
+  cursor: pointer;
 
   display: flex;
   flex-direction: column;
@@ -109,10 +107,6 @@ body {
     z-index: -1;
 
     clip-path: polygon(0% 45px, 45px 0%, 100% 0%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%);
-  }
-
-  &:hover {
-    cursor: pointer;
   }
 }
 
@@ -208,7 +202,7 @@ body {
   margin: 0;
   font-family: $text-font-family;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: $article-text-color;
@@ -219,16 +213,19 @@ body {
   opacity: 0.5;
 }
 
+.article__list-item_span {
+  font-weight: 700;
+}
+
 .figure {
   margin: 0;
 }
 
 .figure__image {
-  display: block;
   position: absolute;
   left: 0;
   bottom: 0;
-  max-width: 100%;
+  width: 100%;
   border-radius: 0 0 0 5px;
 }
 
@@ -301,6 +298,7 @@ body {
 }
 
 .item__text-button {
+  appearance: none;
   color: $default-color;
   text-decoration: none;
   background-color: transparent;

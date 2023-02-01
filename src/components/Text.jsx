@@ -1,7 +1,11 @@
-import { basicData } from '../utils/consts';
+import { useContext } from 'react';
+import { Context } from '../context/Сontext';
+import { constantData } from '../utils/consts';
 
-function Text({ data, isSelected, handleSelect, disabledCard }) {
-  const { itemText, itemButtonText, itemTextSpan } = basicData;
+function Text() {
+  const { data, disabledCard, isSelected, handleSelect } = useContext(Context);
+
+  const { itemText, itemButtonText, itemTextSpan } = constantData;
   const { textSelected, textDisabled } = data;
 
   const textClassName = `item__text ${disabledCard && 'item__text_disabled'}`;
@@ -11,6 +15,7 @@ function Text({ data, isSelected, handleSelect, disabledCard }) {
   } else if (isSelected) {
     return <p className='item__text'>{textSelected}</p>;
   }
+
   return (
     <p className='item__text'>
       {itemText}

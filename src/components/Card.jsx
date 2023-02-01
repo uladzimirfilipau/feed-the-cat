@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Context } from '../context/Сontext';
 import Article from './Article';
 import Text from './Text';
 
@@ -9,21 +10,15 @@ function Card({ data }) {
 
   const handleSelect = () => !disabledCard && setIsSelected(!isSelected);
 
+  const value = { data, disabledCard, isSelected, handleSelect };
+
   return (
-    <li className='item'>
-      <Article
-        data={data}
-        handleSelect={handleSelect}
-        isSelected={isSelected}
-        disabledCard={disabledCard}
-      />
-      <Text
-        data={data}
-        isSelected={isSelected}
-        handleSelect={handleSelect}
-        disabledCard={disabledCard}
-      />
-    </li>
+    <Context.Provider value={value}>
+      <li className='item'>
+        <Article />
+        <Text />
+      </li>
+    </Context.Provider>
   );
 }
 
